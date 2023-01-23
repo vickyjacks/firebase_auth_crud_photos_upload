@@ -8,20 +8,21 @@ import 'package:url_launcher/url_launcher.dart';
 import 'datafetch.dart';
 
 
+
 class HomeScreen extends StatelessWidget {
 
  final DataController controller = Get.put(DataController());
 
   @override
   Widget build(BuildContext context) {
-    // var color = LinearGradient(
-    //   colors: [
-    //     Colors.orange.shade900,
-    //     Colors.orangeAccent.shade100,
-    //   ],
-    //   begin: Alignment.topLeft,
-    //   end: Alignment.centerRight,
-    // );
+    var color = LinearGradient(
+      colors: [
+        Colors.orange.shade900,
+        Colors.orangeAccent.shade100,
+      ],
+      begin: Alignment.topLeft,
+      end: Alignment.centerRight,
+    );
     return Scaffold(
         drawer: AppDrawer(),
         appBar: AppBar(
